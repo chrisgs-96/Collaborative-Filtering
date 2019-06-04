@@ -1,0 +1,107 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        tools:context=".MapsActivity" />
+
+    <Button
+        android:id="@+id/send_b"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="SEND" />
+
+    <EditText
+        android:id="@+id/id_f"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha = "100.5"
+        android:ems="10"
+        android:hint="User ID"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/IP"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/send_b"
+        android:ems="10"
+        android:hint="IP"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/poi_num_f"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/range_f"
+        android:ems="10"
+        android:hint="POI#"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/range_f"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Range "
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/category_f"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/poi_num_f"
+        android:ems="10"
+        android:hint="Category"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/longitude_f"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Longitude"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/latitude_f"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="Latitude"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/range_f"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="Range Filter" />
+</RelativeLayout>
